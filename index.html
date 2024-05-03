@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+
+    <link rel="website icon" href="./img/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img src="./img/image1.png" alt="img">
+
+    <header>
+        <div class="head-title">
+            <h1>Dictionary</h1>
+            <ion-icon name="book-outline" style="color: lightblue;"></ion-icon>
+        </div>
+
+        <button onclick="toggle()"><ion-icon name="trash-outline" style="color: lightblue;"></ion-icon></button>
+
+        <div class="history" >
+            <div class="head">
+                <h3>History</h3>
+                <ion-icon onclick="toggle()" name="close-outline"></ion-icon>
+            </div>
+
+            <div class="clear">
+                <button onclick="deleteList()">Delete history</button>
+            </div>
+
+            <div class="history-div">
+                <ul id="history-list">
+                   
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+
+        <div class="input">
+            <input type="text" id="input" placeholder="What ????">
+
+            <button onclick="search()" id="search-btn" type="submit"><ion-icon name="search-outline" style="color: violet;"></ion-icon> </button>
+        </div>
+
+        <div class="output">
+            <div class="output-title">
+                <h2>Meaning:</h2>
+            </div>
+
+            <div class="answer" id="answer">
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Js link -->
+    <script src="script.js"></script>
+
+    <!-- logo links -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
